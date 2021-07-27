@@ -1,0 +1,26 @@
+{
+  "name": "skeletron",
+  "author": "Jebikoh",
+  "version": "1.0.0",
+  "dependencies": {
+    "@types/ws": "^7.2.5",
+    "discord.js": "^12.2.0",
+    "gts": "^3.1.0",
+    "ts-node": "^10.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^16.4.3",
+    "gts": "^3.1.0",
+    "typescript": "^4.3.5"
+  },
+  "scripts": {
+    "start": "npx ts-node ./src/index.ts",
+    "check": "gts check",
+    "clean": "gts clean",
+    "compile": "tsc",
+    "fix": "gts fix",
+    "prepare": "yarn run compile",
+    "pretest": "yarn run compile",
+    "posttest": "yarn run check"
+  }
+}
